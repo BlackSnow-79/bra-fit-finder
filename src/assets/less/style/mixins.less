@@ -1,0 +1,54 @@
+.cssreset() {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: transparent;
+}
+.transition(@transition) {
+    -webkit-transition: @transition;
+    -moz-transition: @transition;
+    -o-transition: @transition;
+    transition: @transition;
+}
+.box-shadow(@shadow) {
+    -webkit-box-shadow: @shadow;
+    -moz-box-shadow: @shadow;
+    box-shadow: @shadow;
+}
+.deep-shadow (@shadow1, @shadow2) {
+    -webkit-box-shadow: @shadow1, @shadow2;
+    -moz-box-shadow: @shadow1, @shadow2;
+    box-shadow: @shadow1, @shadow2;
+}
+// .deep-shadow {
+//     -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+//     -moz-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+//     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+// }
+.placeholder(@color: @input-color-placeholder, @font-style) {
+    &:-moz-placeholder            { color: @color; font-style: @font-style; }
+    &::-moz-placeholder           { color: @color; font-style: @font-style; }
+    &:-ms-input-placeholder       { color: @color; font-style: @font-style; }
+    &::-webkit-input-placeholder  { color: @color; font-style: @font-style; }
+}
+.text-overflow() {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.display-flex() {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+.item-display-flex(@align) {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: @align;
+    -webkit-align-items: @align;
+    -ms-flex-align: @align;
+    align-items: @align;
+}

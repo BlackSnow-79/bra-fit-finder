@@ -1,0 +1,65 @@
+/*
+ * Core: General Layout Style
+ * -------------------------
+ */
+html,
+body {
+  min-height: 100%;
+  .layout-boxed & {
+    height: 100%;
+  }
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: normal;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: #fff;
+    font-size: 16px;
+    line-height: 1.571em;
+    // color: #223464;
+    color: #666;
+}
+
+/* H1 - H6 font */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: sans-serif;
+  line-height: 1.4;
+}
+/* General Links */
+a {
+  color: @link-color;
+}
+a:hover,
+a:active,
+a:focus {
+    outline: none;
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+}
+main {
+    width: 100%;
+    min-height: 300px;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+    > section {
+        width: 100%;
+    }
+}

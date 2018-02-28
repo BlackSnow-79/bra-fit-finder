@@ -1,0 +1,207 @@
+.progress-bar-section {
+	.progress-bar-block {
+	    margin-bottom: 15px;
+	}
+	.progress {
+	    height: 10px;
+	    margin-bottom: 5px;
+	}
+	.progress-bar-text {
+	    color: @secondary-color;
+	    font-size: 12px;
+	}
+	.progress-percentage {
+	    color: #5bc0de;
+	    font-size: 18px;
+	    font-weight: bold;
+	}
+}
+
+//
+
+.progress-step-section {
+    .progress-bar {
+        position: relative;
+        height: 3px;
+        z-index: 0;
+        background-color: transparent;
+    }
+    .progress-bar::before {
+        position: absolute;
+        display: block;
+        content: " ";
+        background: #C0C0C0;
+        top: 1px;
+        height: 1px;
+        width: 100%;
+        z-index: -1
+    }
+    .progress-bar .progress-bar-value {
+        height: 100%;
+        background: #2996CC;
+        -webkit-transition: all 0.4s ease-in-out;
+        transition: all 0.4s ease-in-out
+    }
+    .progress-indicator {
+        position: relative
+    }
+    .progress-indicator .progress-indicator-tag-wrapper {
+        position: absolute;
+        width: 20px;
+        height: 20px
+    }
+    .progress-indicator-tag {
+        position: relative;
+        display: -webkit-inline-box;
+        display: -webkit-inline-flex;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        -webkit-flex-flow: column-reverse;
+        -ms-flex-flow: column-reverse;
+        flex-flow: column-reverse;
+        width: 20px;
+        height: 20px
+    }
+    .progress-indicator-tag .progress-indicator-tag-name {
+        position: absolute;
+        font-weight: normal;
+        font-size: 14px;
+        color: #C0C0C0;
+        top: -20px;
+        white-space: nowrap;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+        letter-spacing: 0.5px
+    }
+    .progress-indicator-tag .progress-indicator-tag-circle {
+        width: 18px;
+        height: 18px;
+        border: 1px solid silver;
+        border-radius: 50%;
+        margin: 0 auto;
+        cursor: pointer;
+        background: white
+    }
+    .progress-indicator-tag .progress-indicator-tag-circle:hover {
+        width: 16px;
+        height: 16px;
+        border: 2px solid #2996cc;
+        background: white
+    }
+    .progress-indicator-tag .progress-indicator-tag-circle:hover+.progress-indicator-tag-name {
+        font-weight: bold;
+        color: #2996CC
+    }
+    .progress-indicator-tag-current {
+        position: relative;
+        display: -webkit-inline-box;
+        display: -webkit-inline-flex;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        -webkit-flex-flow: column-reverse;
+        -ms-flex-flow: column-reverse;
+        flex-flow: column-reverse;
+        width: 20px;
+        height: 20px
+    }
+    .progress-indicator-tag-current .progress-indicator-tag-name {
+        position: absolute;
+        font-weight: normal;
+        font-size: 14px;
+        color: #C0C0C0;
+        top: -20px;
+        white-space: nowrap;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+        letter-spacing: 0.5px
+    }
+    .progress-indicator-tag-current .progress-indicator-tag-circle {
+        width: 18px;
+        height: 18px;
+        border: 1px solid silver;
+        border-radius: 50%;
+        margin: 0 auto;
+        cursor: pointer;
+        background: white
+    }
+    .progress-indicator-tag-current .progress-indicator-tag-circle:hover {
+        width: 16px;
+        height: 16px;
+        border: 2px solid #2996cc;
+        background: white
+    }
+    .progress-indicator-tag-current .progress-indicator-tag-circle:hover+.progress-indicator-tag-name {
+        font-weight: bold;
+        color: #2996CC
+    }
+    .progress-indicator-tag-current .progress-indicator-tag-name {
+        font-weight: bold;
+        color: #F69768
+    }
+    .progress-indicator-tag-current .progress-indicator-tag-circle {
+        width: 16px;
+        height: 16px;
+        border: 2px solid #f69768
+    }
+    .progress-indicator-tag-complete {
+        position: relative;
+        display: -webkit-inline-box;
+        display: -webkit-inline-flex;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        -webkit-flex-flow: column-reverse;
+        -ms-flex-flow: column-reverse;
+        flex-flow: column-reverse;
+        width: 20px;
+        height: 20px
+    }
+    .progress-indicator-tag-complete .progress-indicator-tag-name {
+        position: absolute;
+        font-weight: normal;
+        font-size: 14px;
+        color: #C0C0C0;
+        top: -20px;
+        white-space: nowrap;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+        letter-spacing: 0.5px
+    }
+    .progress-indicator-tag-complete .progress-indicator-tag-circle {
+        width: 18px;
+        height: 18px;
+        border: 1px solid silver;
+        border-radius: 50%;
+        margin: 0 auto;
+        cursor: pointer;
+        background: white
+    }
+    .progress-indicator-tag-complete .progress-indicator-tag-circle:hover {
+        width: 16px;
+        height: 16px;
+        border: 2px solid #2996cc;
+        background: white
+    }
+    .progress-indicator-tag-complete .progress-indicator-tag-circle:hover+.progress-indicator-tag-name {
+        font-weight: bold;
+        color: #2996CC
+    }
+    .progress-indicator-tag-complete .progress-indicator-tag-name {
+        font-weight: bold;
+        color: #2996CC
+    }
+    .progress-indicator-tag-complete .progress-indicator-tag-circle {
+        width: 20px;
+        height: 20px;
+        border: 0px solid transparent;
+        background-color: #2996CC;
+        background-image: url(content/images/icons/texture.png);
+        background-repeat: no-repeat;
+        background-position: center
+    }
+}

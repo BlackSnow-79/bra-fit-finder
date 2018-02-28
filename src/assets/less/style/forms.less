@@ -1,0 +1,45 @@
+/*
+ * Component: Form
+ * ---------------
+ */
+.form-title {
+    color: @secondary-color;
+    font-size: 16px;
+    font-weight: bold;
+}
+.form-label {
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+.form-control {
+    .box-shadow(none);
+    font-size: 14px;
+    &:focus {
+        outline: none;
+        border-color: @secondary-color;
+        .box-shadow(none);
+    }
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.input-group {
+    background-color: #fff;
+    > * {
+        border: 0
+    }
+    .input-group-addon {
+        color: @secondary-color;
+        background-color: #fff;
+        & + .form-control {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+    select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        text-indent: 1px;
+        text-overflow: '';
+    }
+}

@@ -1,0 +1,23 @@
+.list-group {
+	.list-group-item {
+		padding: 0;
+		border: 0;
+		position: relative;
+		margin-bottom: 0;
+		a {
+			width: 100%;
+			padding: 10px;
+			display: inline-block;
+			color: @text-color-1;
+			border-bottom: @border;
+	        &:hover {
+	        	color: @secondary-color;
+	        }
+		}
+		&:last-child {
+			a {
+				border-bottom: 0;
+			}
+		}
+	}
+}

@@ -1,0 +1,29 @@
+{% set current_page = 'index' %}
+{% extends "layout/_layout.html" %}
+{% block page-container %}
+<main class="main-content">
+    <div class="fit-finder-wrap fullscreen">
+        {% include "block/_cover-fit-step.html" %}
+        {% include "block/_bra-step-1.html" %}
+		{% include "block/_bra-step-2.html" %}
+        {% include "block/_chip-step-1.html" %}
+        {% include "block/_bra-step-result.html" %}
+    </div>
+</main>
+<div class="modal fade warningModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h3 class="modal-title">Bạn chưa chọn dáng ngực </h3>
+            </div>
+            <div class="modal-body">
+                <p>Bạn vui lòng chọn dáng ngực để tiếp tục</p>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
+{% endblock %}
